@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+    <script src="js/functions.js"></script>    
+    <style>
+        body {
+    background-image: linear-gradient(rgb(17, 15, 13), rgb(202, 125, 33));    
+    margin-top: 9px;     
+}
+label {
+    display: block;
+    margin-top:30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(10, 1, 1);
+    text-shadow: 2px 2px 2px red;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.cadastro {   
+    width: 400px;
+    height: 700px;
+    padding-top: 30px;
+   
+    background-color: rgb(219, 235, 217);
+    border-radius: 50px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 110px 45px rgb(136, 158, 135);
+}
+input {
+    width: 50%;
+    display: block;
+    margin:auto;
+}
+input[type="text"], input[type="password"] {
+    border:none;
+    color: black;
+    font-size: 15px;
+    padding:5px;
+    padding: 15px;
+    border-radius:20px;
+    box-shadow: 1px 1px 50px 5px gray;
+    transition: all 0.5s;
+    background-color: rgba(240, 217, 14, 0.6);    
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow: 1px 1px 5px 5px black;
+    background-position: right center;
+}
+input[type="button"] {
+    margin-top: 50px;
+    background-image: linear-gradient(rgb(37, 33, 30), rgb(202, 125, 33));
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(57,12,15);
+    text-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(57,12,15);
+    cursor: pointer;
+    transition: all 0.3s;    
+}
+input[type="button"]:hover{
+    transform: scale(0.8);
+    background-color: black;
+}
+input[type="button"]:active{
+    transform: scale(0.9);
+}
+H1{
+    background-color: aliceblue;
+    height: 50px;
+    width: 550px;
+    align-items: center;
+    font-size: 39px;
+    font-weight: bold;
+    margin-top: 0px;
+    box-shadow: 1px 1px 110px 45px rgb(136, 158, 135);
+    text-shadow: 2px 2px 2px red;
+    
+}
+    </style>
+ 
+ 
+</head>
+<body>
+    <center>
+        <h1>TELA DE CADASTRO</h1>
+     <div class="cadastro">
+         <p></p>
+         <form id="cadastro">
+             <label for="txtNome">Nome Completo</label><br> 
+             <input id="txtNome" name="nome" type="text" maxlength="40" id="txtNome"><p></p>
+             
+             <label for="txtMatricula">Matricula</label><br>
+             <input id="txtMatricula" name="matricula" type="text" maxlength="10" id="txtMatricula"><p></p>
+
+             <label for="txtNota1">Nota Primeiro Bimestre</label><br>
+             <input id="txtNota1" name="nota1" type="text" maxlength="10" id="txtNota1"><p></p>
+
+             <label for="txtNota2">Nota Segundo Bimestre</label><br>
+             <input id="txtNota2" name="nota2" type="text" maxlength="10" id="txtNota2"><p></p>
+            
+             <input type="button" value="Cadastrar Usuario" onclick="cadastrar()"><br>
+             </p>
+             
+         </form>
+         <a href="listar.html">Lista de usuario Cadastrado</a>
+     </div>
+ </center>
+ </body>
+</html>
